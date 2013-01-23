@@ -1,0 +1,82 @@
+// --- component: button -----------------------------------------------------------------------------------------------
+
+.bt
+{
+  position: relative;
+  padding: 0.55em 1.5em 0.5em;
+  margin: 0;
+  font: bold 12px/1.5em $simpleui-font-family;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: $simpleui-border-width solid $simpleui-base-color;
+  color: $simpleui-base-color;
+  background-color: transparent;
+
+  &:hover,
+  &.active
+  {
+    background-color: #000;
+    color: #fff;
+  }
+
+  // --- bt disabled ---------------------------------------------------------------------------------------------------
+
+  &.disabled
+  {
+    opacity: .3;
+    cursor: default;
+
+    &:hover
+    {
+      background: inherit;
+      color: inherit;
+    }
+  }
+
+  // --- submit fix (especially firefox) -------------------------------------------------------------------------------
+
+  &[type=submit]
+  {
+    height: 35px;
+  }
+
+  // --- small ---------------------------------------------------------------------------------------------------------
+
+  &.bt_small
+  {
+    font-size: 10px;
+
+    &[type=submit]
+    {
+      height: 30px;
+    }
+  }
+
+  // --- medium --------------------------------------------------------------------------------------------------------
+
+  &.bt_medium
+  {
+    font-size: 14px;
+
+    &[type=submit]
+    {
+      height: 40px;
+    }
+  }
+
+  // --- large ---------------------------------------------------------------------------------------------------------
+
+  &.bt_large
+  {
+    font-size: 16px;
+
+    &[type=submit]
+    {
+      height: 45px;
+    }
+  }
+}
