@@ -1,0 +1,18 @@
+// --- component: progress ---------------------------------------------------------------------------------------------
+
+progress
+{
+  height: 1.2em;
+  @include appearance(none);
+
+  &::-webkit-progress-bar
+  {
+    border: $simpleui-border-width solid $simpleui-base-color;
+    background: #fff;
+  }
+
+  &::-webkit-progress-value
+  {
+    background: #000;
+  }
+}

@@ -1,0 +1,35 @@
+$inputs: 'input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="datetime_picker"], input[type="date_picker"], textarea, select';
+
+#{$inputs}
+{
+  border: $simpleui-border-width solid $simpleui-base-color;
+  background: #fff;
+  color: #000;
+  font: 12px $simpleui-font-family;
+  padding: 8px 6px;
+  margin: 0;
+  width: 150px;
+  outline: none;
+  @include box-sizing(border-box);
+
+
+  &[disabled]
+  {
+    opacity: .3;
+    cursor: default;
+  }
+
+  &:not([disabled]):hover
+  {
+  }
+
+  &:not([disabled]):focus
+  {
+  }
+
+}
+
+select
+{
+  padding: 7px 6px;
+}

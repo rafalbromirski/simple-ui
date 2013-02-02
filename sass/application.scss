@@ -22,5 +22,9 @@ $legacy-support-for-mozilla: false;
 
 // --- simple ui: components -------------------------------------------------------------------------------------------
 
-@import "components/buttons";
 @import "components/box";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/labels";
+@import "components/progress";
+@import "components/table";

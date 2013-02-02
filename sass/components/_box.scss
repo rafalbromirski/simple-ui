@@ -14,12 +14,50 @@
     color: #fff;
     position: relative;
 
-    h1, h2, h3, h4, h5, h6
+    #{headers(all)}
     {
       font: bold 12px/1.5em $simpleui-font-family;
       text-transform: uppercase;
       margin: 0;
       padding: 0;
+    }
+
+    .actions
+    {
+      position: absolute;
+      top: 2px;
+      right: 5px;
+
+      .bt
+      {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover
+        {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .box_foot
+  {
+    padding: 0 5px 5px;
+    text-align: right;
+  }
+
+  .box_head,
+  .box_foot
+  {
+    .actions
+    {
+      .bt
+      {
+        font-size: 10px;
+        vertical-align: middle;
+      }
     }
   }
 
