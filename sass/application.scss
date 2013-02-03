@@ -18,10 +18,12 @@ $legacy-support-for-mozilla: false;
 // --- simple ui: core -------------------------------------------------------------------------------------------------
 
 @import "core/base";
+@import "core/typography";
 
 
 // --- simple ui: components -------------------------------------------------------------------------------------------
 
+@import "components/badges";
 @import "components/box";
 @import "components/buttons";
 @import "components/inputs";

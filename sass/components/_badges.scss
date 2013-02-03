@@ -1,0 +1,19 @@
+// --- component: badge ------------------------------------------------------------------------------------------------
+
+.badge
+{
+  display: inline-block;
+  padding: .45em .5em;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: $simpleui-border-width solid $simpleui-base-color;
+  @include border-radius(1.5em);
+
+  &.invert
+  {
+    background-color: #000;
+    color: #fff;
+  }
+}

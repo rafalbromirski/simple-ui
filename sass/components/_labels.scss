@@ -11,9 +11,16 @@
 .label
 {
   display: inline-block;
-  padding: 3px 6px;
+  padding: .15em .4em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #fff;
+  border: $simpleui-border-width solid $simpleui-base-color;
+
+  &.invert
+  {
+    background: #000;
+    color: #fff;
+  }
 }

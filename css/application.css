@@ -74,6 +74,36 @@ body {
   margin: 0;
 }
 
+.thumb {
+  border: 2px solid black;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid white;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.45em 0.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+.badge.invert {
+  background-color: #000;
+  color: #fff;
+}
+
 .box {
   margin-bottom: 20px;
   border: 2px solid black;
@@ -120,7 +150,7 @@ body {
 
 .bt {
   position: relative;
-  padding: 0.55em 1.5em 0.5em;
+  padding: 0.55em 1em 0.5em;
   margin: 0;
   font: bold 12px/1.5em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
@@ -167,35 +197,55 @@ body {
   height: 45px;
 }
 
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="datetime_picker"], input[type="date_picker"], textarea, select {
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), textarea, select {
   border: 2px solid black;
   background: #fff;
   color: #000;
   font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding: 8px 6px;
   margin: 0;
-  width: 150px;
+  width: 200px;
   outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-input[type="text"][disabled], input[type="password"][disabled], input[type="email"][disabled], input[type="tel"][disabled], input[type="number"][disabled], input[type="datetime_picker"][disabled], input[type="date_picker"][disabled], textarea[disabled], select[disabled] {
-  opacity: .3;
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"])[disabled], textarea[disabled], select[disabled] {
+  opacity: .35;
   cursor: default;
 }
 
 select {
-  padding: 7px 6px;
+  width: auto;
+  padding-right: 25px;
+  background: url(../images/arrow.png) no-repeat 100% 50% white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
 }
 
 .label {
   display: inline-block;
-  padding: 3px 6px;
+  padding: 0.15em 0.4em;
   font-weight: bold;
   text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+}
+.label.invert {
+  background: #000;
   color: #fff;
-  background-color: #000;
 }
 
 progress {
