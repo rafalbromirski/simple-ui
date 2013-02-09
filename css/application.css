@@ -59,21 +59,22 @@ body {
 }
 
 .content {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.component {
-  margin: 20px 0;
-  padding: 20px 0;
-}
-.component h2 {
-  font-size: 12px;
-  color: #999;
-  padding: 0 0 20px;
-  margin: 0;
-}
+@media screen and (max-width: 640px) {
+  /* to avoid the adjustment of fonts on iOS devices you should keep this line */
+  * {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+  }
 
+  .content {
+    min-width: 440px;
+  }
+}
 .thumb {
   border: 2px solid black;
 }
@@ -90,8 +91,8 @@ hr {
   padding: 0.45em 0.5em;
   font-weight: bold;
   text-align: center;
-  color: #000;
-  background-color: #fff;
+  color: black;
+  background: white;
   border: 2px solid black;
   -webkit-border-radius: 1.5em;
   -moz-border-radius: 1.5em;
@@ -100,27 +101,27 @@ hr {
   border-radius: 1.5em;
 }
 .badge.invert {
-  background-color: #000;
-  color: #fff;
+  background: black;
+  color: white;
 }
 
 .box {
   margin-bottom: 20px;
+  background: white;
   border: 2px solid black;
-  background: transparent;
 }
 .box .box_head {
   min-height: 20px;
   padding: 8px 15px;
-  background: black;
-  color: #fff;
   position: relative;
+  background: black;
+  color: white;
 }
 .box .box_head h1, .box .box_head h2, .box .box_head h3, .box .box_head h4, .box .box_head h5, .box .box_head h6 {
+  padding: 0;
+  margin: 0;
   font: bold 12px/1.5em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
 }
 .box .box_head .actions {
   position: absolute;
@@ -128,12 +129,12 @@ hr {
   right: 5px;
 }
 .box .box_head .actions .bt {
-  border-color: #fff;
-  color: #fff;
+  color: white;
+  border-color: white;
 }
 .box .box_head .actions .bt:hover {
-  background-color: #fff;
-  color: #000;
+  color: black;
+  background: white;
 }
 .box .box_foot {
   padding: 0 5px 5px;
@@ -141,6 +142,7 @@ hr {
 }
 .box .box_head .actions .bt,
 .box .box_foot .actions .bt {
+  height: 30px;
   font-size: 10px;
   vertical-align: middle;
 }
@@ -161,11 +163,22 @@ hr {
   vertical-align: top;
   border: 2px solid black;
   color: black;
-  background-color: transparent;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .bt:hover, .bt.active {
-  background-color: #000;
-  color: #fff;
+  background: black;
+  color: white;
 }
 .bt.disabled {
   opacity: .3;
@@ -175,58 +188,99 @@ hr {
   background: inherit;
   color: inherit;
 }
-.bt[type=submit] {
+.bt {
   height: 35px;
 }
 .bt.bt_small {
   font-size: 10px;
-}
-.bt.bt_small[type=submit] {
   height: 30px;
 }
 .bt.bt_medium {
   font-size: 14px;
-}
-.bt.bt_medium[type=submit] {
   height: 40px;
 }
 .bt.bt_large {
   font-size: 16px;
-}
-.bt.bt_large[type=submit] {
   height: 45px;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), textarea, select {
-  border: 2px solid black;
-  background: #fff;
-  color: #000;
-  font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  width: 200px;
   padding: 8px 6px;
   margin: 0;
-  width: 200px;
   outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: white;
+  color: black;
+  border: 2px solid black;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-input:not([type="radio"]):not([type="checkbox"]):not([type="submit"])[disabled], textarea[disabled], select[disabled] {
+select[disabled],
+textarea[disabled],
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled] {
   opacity: .35;
   cursor: default;
 }
 
 select {
   width: auto;
-  padding-right: 25px;
-  background: url(../images/arrow.png) no-repeat 100% 50% white;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  height: 35px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    padding-right: 25px;
+    background: url("../images/arrow.png") no-repeat 100% 50% white;
+    -webkit-appearance: none;
+  }
 }
 
 textarea {
@@ -239,27 +293,25 @@ textarea {
   padding: 0.15em 0.4em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000;
-  background-color: #fff;
+  background: white;
+  color: black;
   border: 2px solid black;
 }
 .label.invert {
-  background: #000;
-  color: #fff;
+  background: black;
+  color: white;
 }
 
 progress {
   height: 1.2em;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 progress::-webkit-progress-bar {
+  background: white;
   border: 2px solid black;
-  background: #fff;
 }
 progress::-webkit-progress-value {
-  background: #000;
+  background: black;
 }
 
 table {
@@ -269,31 +321,46 @@ table {
 }
 
 .table {
-  border: 2px solid black;
   margin: 0 0 5px;
   border-collapse: separate;
+  border: 2px solid black;
 }
 .table thead tr th {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
   padding: 10px 8px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #000;
-  color: #fff;
+  background: black;
+  color: white;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
 }
 .table thead tr th:first-child {
   border-left: none;
 }
 .table tbody tr td {
+  padding: 9px;
+  background: white;
   border-left: 2px solid black;
   border-top: 2px solid black;
-  padding: 9px;
-  background-color: #fff;
 }
 .table tbody tr td:first-child {
   border-left: none;
 }
 .table tbody tr:first-child td {
   border-top: none;
+}
+
+.description {
+  padding: 40px 0;
+}
+
+.component {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.component h2 {
+  font-size: 12px;
+  color: #999;
+  padding: 0 0 20px;
+  margin: 0;
 }

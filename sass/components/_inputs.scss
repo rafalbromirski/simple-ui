@@ -1,39 +1,63 @@
-$inputs: 'input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), textarea, select';
+// --- component: inputs variables ------------------------------------------------------------------------------------
+
+// $inputs: 'input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]), textarea, select';
+$inputs: 'select,
+          textarea,
+          input[type="text"],
+          input[type="password"],
+          input[type="datetime"],
+          input[type="datetime-local"],
+          input[type="date"],
+          input[type="month"],
+          input[type="time"],
+          input[type="week"],
+          input[type="number"],
+          input[type="email"],
+          input[type="url"],
+          input[type="search"],
+          input[type="tel"],
+          input[type="color"]';
+
+
+// --- component: inputs ----------------------------------------------------------------------------------------------
 
 #{$inputs}
 {
-  border: $simpleui-border-width solid $simpleui-base-color;
-  background: #fff;
-  color: #000;
-  font: 12px $simpleui-font-family;
+  width: 200px;
   padding: 8px 6px;
   margin: 0;
-  width: 200px;
   outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  font: 12px $ui-font-family;
+  background: $ui-base-color-opposite;
+  color: $ui-base-color;
+  border: $ui-border-width solid $ui-base-color;
   @include box-sizing(border-box);
+  @include border-radius(0);
+  @include appearance(none);
 
   &[disabled]
   {
     opacity: .35;
     cursor: default;
   }
-
-  &:not([disabled]):hover
-  {
-  }
-
-  &:not([disabled]):focus
-  {
-  }
 }
 
 select
 {
   width: auto;
-  padding-right: 25px;
-  background: url(../images/arrow.png) no-repeat 100% 50% #fff;
-  @include appearance(none);
+  height: 35px;
   @include border-radius(0);
+  @include box-sizing(border-box);
+
+  /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+  @media screen and (-webkit-min-device-pixel-ratio:0)
+  {
+    padding-right: 25px;
+    background: url("../images/arrow.png") no-repeat 100% 50% $ui-base-color-opposite;
+    -webkit-appearance: none;
+  }
 }
 
 textarea

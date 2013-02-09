@@ -5,22 +5,25 @@
   position: relative;
   padding: 0.55em 1em 0.5em;
   margin: 0;
-  font: bold 12px/1.5em $simpleui-font-family;
+  font: bold 12px/1.5em $ui-font-family;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  border: $simpleui-border-width solid $simpleui-base-color;
-  color: $simpleui-base-color;
-  background-color: transparent;
+  border: $ui-border-width solid $ui-base-color;
+  color: $ui-base-color;
+  background: transparent;
+  @include box-sizing(border-box);
+  @include border-radius(0);
+  @include appearance(none);
 
   &:hover,
   &.active
   {
-    background-color: #000;
-    color: #fff;
+    background: $ui-base-color;
+    color: $ui-base-color-opposite;
   }
 
   // --- bt disabled ---------------------------------------------------------------------------------------------------
@@ -39,7 +42,7 @@
 
   // --- submit fix (especially firefox) -------------------------------------------------------------------------------
 
-  &[type=submit]
+  &
   {
     height: 35px;
   }
@@ -49,10 +52,10 @@
   &.bt_small
   {
     font-size: 10px;
+    height: 30px;
 
     &[type=submit]
     {
-      height: 30px;
     }
   }
 
@@ -61,10 +64,10 @@
   &.bt_medium
   {
     font-size: 14px;
+    height: 40px;
 
     &[type=submit]
     {
-      height: 40px;
     }
   }
 
@@ -73,10 +76,10 @@
   &.bt_large
   {
     font-size: 16px;
+    height: 45px;
 
     &[type=submit]
     {
-      height: 45px;
     }
   }
 }

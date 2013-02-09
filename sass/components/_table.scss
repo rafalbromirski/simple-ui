@@ -11,9 +11,9 @@ table
 
 .table
 {
-  border: $simpleui-border-width solid $simpleui-base-color;
   margin: 0 0 5px;
   border-collapse: separate;
+  border: $ui-border-width solid $ui-base-color;
 
   thead
   {
@@ -21,13 +21,13 @@ table
     {
       th
       {
-        border-bottom: $simpleui-border-width solid $simpleui-base-color;
-        border-left: $simpleui-border-width solid $simpleui-base-color;
         padding: 10px 8px;
         font-weight: bold;
         text-transform: uppercase;
-        background: #000;
-        color: #fff;
+        background: $ui-base-color;
+        color: $ui-base-color-opposite;
+        border-bottom: $ui-border-width solid $ui-base-color;
+        border-left: $ui-border-width solid $ui-base-color;
 
         &:first-child
         {
@@ -43,10 +43,10 @@ table
     {
       td
       {
-        border-left: $simpleui-border-width solid $simpleui-base-color;
-        border-top: $simpleui-border-width solid $simpleui-base-color;
         padding: 9px;
-        background-color: #fff;
+        background: $ui-base-color-opposite;
+        border-left: $ui-border-width solid $ui-base-color;
+        border-top: $ui-border-width solid $ui-base-color;
 
         &:first-child
         {

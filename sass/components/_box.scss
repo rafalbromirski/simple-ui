@@ -3,23 +3,23 @@
 .box
 {
   margin-bottom: 20px;
-  border: $simpleui-border-width solid $simpleui-base-color;
-  background: transparent;
+  background: $ui-base-color-opposite;
+  border: $ui-border-width solid $ui-base-color;
 
   .box_head
   {
     min-height: 20px;
     padding: 8px 15px;
-    background: $simpleui-base-color;
-    color: #fff;
     position: relative;
+    background: $ui-base-color;
+    color: $ui-base-color-opposite;
 
     #{headers(all)}
     {
-      font: bold 12px/1.5em $simpleui-font-family;
-      text-transform: uppercase;
-      margin: 0;
       padding: 0;
+      margin: 0;
+      font: bold 12px/1.5em $ui-font-family;
+      text-transform: uppercase;
     }
 
     .actions
@@ -30,13 +30,13 @@
 
       .bt
       {
-        border-color: #fff;
-        color: #fff;
+        color: $ui-base-color-opposite;
+        border-color: $ui-base-color-opposite;
 
         &:hover
         {
-          background-color: #fff;
-          color: #000;
+          color: $ui-base-color;
+          background: $ui-base-color-opposite;
         }
       }
     }
@@ -55,6 +55,7 @@
     {
       .bt
       {
+        height: 30px;
         font-size: 10px;
         vertical-align: middle;
       }

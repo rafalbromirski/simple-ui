@@ -1,14 +1,12 @@
+// --- simple ui: variables --------------------------------------------------------------------------------------------
+
+$ui-base-color: #000 !default;
+$ui-base-color-opposite: #fff !default;
+$ui-border-width: 2px !default;
+
+$ui-font-color: $ui-base-color !default;
+$ui-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+
 // --- page: variables -------------------------------------------------------------------------------------------------
 
 $page-width: 800px;
-
-
-// --- simple ui: variables --------------------------------------------------------------------------------------------
-
-$simpleui-base-color: #000 !default;
-$simpleui-base-active-color: $simpleui-base-color !default;
-
-$simpleui-text-color: $simpleui-base-color !default;
-$simpleui-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
-
-$simpleui-border-width: 2px !default;

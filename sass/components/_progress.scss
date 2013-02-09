@@ -3,16 +3,16 @@
 progress
 {
   height: 1.2em;
-  @include appearance(none);
+  -webkit-appearance: none;
 
   &::-webkit-progress-bar
   {
-    border: $simpleui-border-width solid $simpleui-base-color;
-    background: #fff;
+    background: $ui-base-color-opposite;
+    border: $ui-border-width solid $ui-base-color;
   }
 
   &::-webkit-progress-value
   {
-    background: #000;
+    background: $ui-base-color;
   }
 }

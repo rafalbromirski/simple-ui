@@ -1,11 +1,3 @@
-// @mixin label-ui($name, $color)
-// {
-//   &.label_#{$name}
-//   {
-//     background-color: $color;
-//   }
-// }
-
 // --- component: label ------------------------------------------------------------------------------------------------
 
 .label
@@ -14,13 +6,13 @@
   padding: .15em .4em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #000;
-  background-color: #fff;
-  border: $simpleui-border-width solid $simpleui-base-color;
+  background: $ui-base-color-opposite;
+  color: $ui-base-color;
+  border: $ui-border-width solid $ui-base-color;
 
   &.invert
   {
-    background: #000;
-    color: #fff;
+    background: $ui-base-color;
+    color: $ui-base-color-opposite;
   }
 }
