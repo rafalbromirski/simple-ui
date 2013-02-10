@@ -1,0 +1,64 @@
+// --- page layout ----------------------------------------------------------------------------------------------------
+
+.content
+{
+  padding: 20px;
+
+  h1
+  {
+    padding: 15px 0 15px;
+    font-family: 'Fenix', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.description
+{
+  font-size: 16px;
+
+  p
+  {
+    line-height: 1.4em;
+  }
+
+  .actions
+  {
+    text-align: center;
+    padding: 40px 0;
+
+    a
+    {
+      margin: 0 5px;
+      width: 20%;
+    }
+  }
+}
+
+.component
+{
+  margin: 20px 0;
+  padding: 20px 0;
+
+  h2
+  {
+    font-size: 12px;
+    color: #999;
+    padding: 0 0 20px;
+    margin: 0;
+  }
+}
+
+// --- responsive -----------------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 640px)
+{
+  /* to avoid the adjustment of fonts on iOS devices you should keep this line */
+  * { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
+
+  .content
+  {
+    min-width: 440px;
+  }
+}

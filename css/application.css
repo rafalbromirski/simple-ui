@@ -55,26 +55,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: 12px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-@media screen and (max-width: 640px) {
-  /* to avoid the adjustment of fonts on iOS devices you should keep this line */
-  * {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-  }
-
-  .content {
-    min-width: 440px;
-  }
-}
 .thumb {
   border: 2px solid black;
 }
@@ -120,7 +108,7 @@ hr {
 .box .box_head h1, .box .box_head h2, .box .box_head h3, .box .box_head h4, .box .box_head h5, .box .box_head h6 {
   padding: 0;
   margin: 0;
-  font: bold 12px/1.5em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: bold 12px/1.5em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-transform: uppercase;
 }
 .box .box_head .actions {
@@ -151,10 +139,11 @@ hr {
 }
 
 .bt {
+  height: 35px;
   position: relative;
   padding: 0.55em 1em 0.5em;
   margin: 0;
-  font: bold 12px/1.5em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: bold 12px/1.5em "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -187,9 +176,6 @@ hr {
 .bt.disabled:hover {
   background: inherit;
   color: inherit;
-}
-.bt {
-  height: 35px;
 }
 .bt.bt_small {
   font-size: 10px;
@@ -226,7 +212,7 @@ input[type="color"] {
   outline: none;
   display: inline-block;
   vertical-align: middle;
-  font: 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: 12px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background: white;
   color: black;
   border: 2px solid black;
@@ -350,8 +336,30 @@ table {
   border-top: none;
 }
 
+.content {
+  padding: 20px;
+}
+.content h1 {
+  padding: 15px 0 15px;
+  font-family: "Fenix", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .description {
+  font-size: 16px;
+}
+.description p {
+  line-height: 1.4em;
+}
+.description .actions {
+  text-align: center;
   padding: 40px 0;
+}
+.description .actions a {
+  margin: 0 5px;
+  width: 20%;
 }
 
 .component {
@@ -363,4 +371,16 @@ table {
   color: #999;
   padding: 0 0 20px;
   margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  /* to avoid the adjustment of fonts on iOS devices you should keep this line */
+  * {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+  }
+
+  .content {
+    min-width: 440px;
+  }
 }

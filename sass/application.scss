@@ -24,7 +24,7 @@ $legacy-support-for-mozilla: false;
 // --- simple ui: components ------------------------------------------------------------------------------------------
 
 @import "components/badges";
-@import "components/box";
+@import "components/boxes";
 @import "components/buttons";
 @import "components/inputs";
 @import "components/labels";
@@ -34,4 +34,4 @@ $legacy-support-for-mozilla: false;
 
 // --- pages ----------------------------------------------------------------------------------------------------------
 
-@import "pages/home";
+@import "pages/content";

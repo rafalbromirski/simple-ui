@@ -1,4 +1,4 @@
-// --- base -----------------------------------------------------------------------------------------------------------
+// --- core: base -----------------------------------------------------------------------------------------------------
 
 body
 {
@@ -9,18 +9,4 @@ body
 {
   max-width: $page-width;
   margin: 0 auto;
-  padding: 20px;
 }
-
-@media screen and (max-width: 640px)
-{
-  /* to avoid the adjustment of fonts on iOS devices you should keep this line */
-  * { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
-
-  .content
-  {
-    min-width: 440px;
-  }
-
-}
-

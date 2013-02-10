@@ -1,12 +1,13 @@
-// --- simple ui: variables --------------------------------------------------------------------------------------------
+// --- core: variables ------------------------------------------------------------------------------------------------
 
 $ui-base-color: #000 !default;
 $ui-base-color-opposite: #fff !default;
 $ui-border-width: 2px !default;
 
 $ui-font-color: $ui-base-color !default;
-$ui-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$ui-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
 
-// --- page: variables -------------------------------------------------------------------------------------------------
 
-$page-width: 800px;
+// --- core: page variables -------------------------------------------------------------------------------------------
+
+$page-width: 800px !default;
