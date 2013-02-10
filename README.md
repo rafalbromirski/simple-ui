@@ -40,7 +40,7 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
     - `$ui-button-height`: 35px;
     - `$ui-input-height`: `$ui-button-height`;
     - `$ui-select-height`: `$ui-button-height`;
-	
+
 	- `$page-width`: 800px;
 
 #### Pages:
@@ -50,17 +50,11 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 ---
 
 
-### To do:	
+### To do:
 
-- **Grid** 
 - **Icons**
 
 Do you want them?
-
-
-### Changelog:
-
-- **1.0** - First version released
 
 ---
 
@@ -72,7 +66,7 @@ Do you want them?
 ---
 
 
-## License:
+### License:
 
 The MIT license
 
