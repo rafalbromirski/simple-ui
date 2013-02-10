@@ -13,8 +13,6 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 - Opera
 - IE8+
 
-**Simple.ui** works with Ruby on Rails, just copy sass directory content into your `assets/stylesheets` and remove `config.rb`.
-
 ---
 
 #### Components:

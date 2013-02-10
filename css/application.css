@@ -345,11 +345,16 @@ table {
   padding: 20px;
 }
 .content h1 {
-  padding: 15px 0 15px;
+  padding: 15px 0;
   font-family: "Fenix", sans-serif;
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+}
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
 .description {
@@ -367,7 +372,10 @@ table {
 }
 .description .actions {
   text-align: center;
+  margin: 20px 0;
   padding: 40px 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .description .actions a {
   margin: 0 5px;
@@ -378,7 +386,7 @@ table {
   margin: 20px 0;
   padding: 20px 0;
 }
-.component h2 {
+.component h3 {
   font-size: 12px;
   color: #999;
   padding: 0 0 20px;
