@@ -23,6 +23,17 @@
     line-height: 1.4em;
   }
 
+  ul
+  {
+    padding: 10px 0 10px 25px;
+    list-style: disc;
+
+    li
+    {
+      padding: 2px 0;
+    }
+  }
+
   .actions
   {
     text-align: center;

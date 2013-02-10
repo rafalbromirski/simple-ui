@@ -74,6 +74,10 @@ hr {
   border-bottom: 1px solid white;
 }
 
+strong, b {
+  font-weight: bold;
+}
+
 .badge {
   display: inline-block;
   padding: 0.45em 0.5em;
@@ -353,6 +357,13 @@ table {
 }
 .description p {
   line-height: 1.4em;
+}
+.description ul {
+  padding: 10px 0 10px 25px;
+  list-style: disc;
+}
+.description ul li {
+  padding: 2px 0;
 }
 .description .actions {
   text-align: center;
