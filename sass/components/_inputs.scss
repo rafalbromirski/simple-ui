@@ -24,6 +24,7 @@ $inputs: 'select,
 #{$inputs}
 {
   width: 200px;
+  height: $ui-input-height;
   padding: 8px 6px;
   margin: 0;
   outline: none;
@@ -47,7 +48,7 @@ $inputs: 'select,
 select
 {
   width: auto;
-  height: 35px;
+  height: $ui-select-height;
   @include border-radius(0);
   @include box-sizing(border-box);
 

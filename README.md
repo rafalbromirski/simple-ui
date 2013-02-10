@@ -13,7 +13,7 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 - Opera
 - IE8+
 
-**Simple.ui** works great with Ruby on Rails (just copy sass directory content into your assets/stylesheets direcotry and remove config.rb file)
+**Simple.ui** works with Ruby on Rails, just copy sass directory content into your `assets/stylesheets` and remove `config.rb`.
 
 ---
 
@@ -31,12 +31,15 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 
 - **base**
 - **typography**
-- **variables** - defaults values
+- **variables** - default values
 	- `$ui-base-color`: #000;
 	- `$ui-base-color-opposite`: #fff;
 	- `$ui-border-width`: 2px;
-	- `$ui-font-color`: $ui-base-color;
+	- `$ui-font-color`: `$ui-base-color`;
 	- `$ui-font-family`: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    - `$ui-button-height`: 35px;
+    - `$ui-input-height`: `$ui-button-height`;
+    - `$ui-select-height`: `$ui-button-height`;
 	
 	- `$page-width`: 800px;
 
@@ -46,13 +49,8 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 
 ---
 
-### Preview:
 
-
-![Simple.ui](http://paranoida.github.com/simple-ui/simpleui.png)
-
-
-## To do:	
+### To do:	
 
 - **Grid** 
 - **Icons**
@@ -60,9 +58,19 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 Do you want them?
 
 
-## Changelog:
+### Changelog:
 
 - **1.0** - First version released
+
+---
+
+### Preview:
+
+
+![Simple.ui](http://paranoida.github.com/simple-ui/simpleui.png)
+
+---
+
 
 ## License:
 

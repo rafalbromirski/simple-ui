@@ -207,6 +207,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   width: 200px;
+  height: 35px;
   padding: 8px 6px;
   margin: 0;
   outline: none;
