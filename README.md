@@ -29,16 +29,16 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 - **base**
 - **typography**
 - **variables** - default values
-	- `$ui-base-color`: #000;
-	- `$ui-base-color-opposite`: #fff;
-	- `$ui-border-width`: 2px;
-	- `$ui-font-color`: `$ui-base-color`;
-	- `$ui-font-family`: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    - `$ui-base-color`: #000;
+    - `$ui-base-color-opposite`: #fff;
+    - `$ui-border-width`: 2px;
+    - `$ui-font-color`: `$ui-base-color`;
+    - `$ui-font-family`: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     - `$ui-button-height`: 35px;
     - `$ui-input-height`: `$ui-button-height`;
     - `$ui-select-height`: `$ui-button-height`;
 
-	- `$page-width`: 800px;
+    - `$page-width`: 800px;
 
 #### Pages:
 
