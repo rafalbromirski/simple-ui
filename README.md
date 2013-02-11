@@ -58,7 +58,7 @@ Do you want them?
 ### Preview:
 
 
-![Simple.ui](http://paranoida.github.com/simple-ui/simpleui.png)
+![Simple.ui](http://paranoida.github.com/simple-ui/simple-ui.png)
 
 ---
 
