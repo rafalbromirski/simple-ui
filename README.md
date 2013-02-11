@@ -4,7 +4,7 @@
 
 ### View it online: [demo](http://paranoida.github.com/simple-ui/)
 
-Nope, it's not another framework. This is a set of (IMO) the most popular components used in many web applications. These components can act as a "core" for a fresh development, are fully customizable and the markup is minimal so you can use them as you please. You don't have to worry about browser issues as they were tested against cross-browser & cross-platform compatibility:
+Nope, it's not another framework. This is a set of (IMO) the most popular components used in many web applications. These components can act as a "core" for a fresh development, are fully customizable and the markup is minimal so you can use and style them as you please. You don't have to worry about browser issues as they were tested against cross-browser & cross-platform compatibility:
 
 - Chrome
 - Safari
@@ -22,7 +22,6 @@ Nope, it's not another framework. This is a set of (IMO) the most popular compon
 - **buttons**
 - **inputs**
 - **labels**
-- **progress bar** - native html5 element (custom appearance only for **webkit** based browser)
 - **tables**
 
 #### Core:

@@ -28,10 +28,9 @@ $legacy-support-for-mozilla: false;
 @import "components/buttons";
 @import "components/inputs";
 @import "components/labels";
-@import "components/progress";
 @import "components/table";
 
 
 // --- pages ----------------------------------------------------------------------------------------------------------
 
-@import "pages/content";
+@import "pages/main";
