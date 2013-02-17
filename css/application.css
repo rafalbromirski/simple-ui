@@ -293,18 +293,6 @@ textarea {
   color: white;
 }
 
-progress {
-  height: 1.2em;
-  -webkit-appearance: none;
-}
-progress::-webkit-progress-bar {
-  background: white;
-  border: 2px solid black;
-}
-progress::-webkit-progress-value {
-  background: black;
-}
-
 table {
   width: 100%;
   position: relative;
@@ -380,6 +368,11 @@ table {
 .description .actions a {
   margin: 0 5px;
   width: 23%;
+}
+
+.addthis {
+  padding: 20px 0 0;
+  height: 30px;
 }
 
 .component {
