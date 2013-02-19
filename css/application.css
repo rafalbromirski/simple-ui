@@ -334,8 +334,8 @@ table {
 }
 .content h1 {
   padding: 15px 0;
-  font-family: "Fenix", sans-serif;
-  font-size: 36px;
+  font-size: 50px;
+  letter-spacing: -2px;
   font-weight: bold;
   text-align: center;
 }
@@ -344,12 +344,13 @@ table {
   font-weight: bold;
   padding: 10px 0;
 }
+.content p {
+  line-height: 1.4em;
+  padding: .3em;
+}
 
 .description {
   font-size: 16px;
-}
-.description p {
-  line-height: 1.4em;
 }
 .description ul {
   padding: 10px 0 10px 25px;
@@ -370,20 +371,41 @@ table {
   width: 23%;
 }
 
-.addthis {
-  padding: 20px 0 0;
-  height: 30px;
-}
-
-.component {
+.components .component {
   margin: 20px 0;
   padding: 20px 0;
 }
-.component h3 {
+.components .component > h3 {
   font-size: 12px;
   color: #999;
   padding: 0 0 20px;
   margin: 0;
+}
+
+.footer {
+  font-size: 12px;
+  padding: 10px 0 50px;
+  border-top: 1px solid #dddddd;
+}
+.footer .credits {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.footer h1 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.footer a {
+  color: #000;
+  font-weight: bold;
+}
+
+.addthis {
+  padding: 20px 0 0;
+  height: 30px;
 }
 
 @media screen and (max-width: 640px) {

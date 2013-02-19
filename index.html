@@ -4,13 +4,11 @@
   <meta charset="utf-8">
 
   <title>Simple UI</title>
-  <meta name="description" content="">
+  <meta name="description" content="Nope, it's not another framework. This is a set of the most popular components used in many web applications. These components can act as a core for a fresh development, are fully customizable and the markup is minimal so you can use and style them as you please.">
   <meta name="author" content="Rafal Bromirski">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/application.css">
-
-  <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -21,7 +19,7 @@
 <div class="content">
   <div class="description">
     <h1>Simple.ui</h1>
-    <p>Nope, it's not another framework. This is a set of (IMO) the most popular components used in many web applications. These components can act as a "core" for a fresh development, are fully customizable and the markup is minimal so you can use and style them as you please. You don't have to worry about browser issues as they were tested against cross-browser and cross-platform compatibility:</p>
+    <p>Nope, it's not another framework. This is a set of the most popular components used in many web applications. These components can act as a "core" for a fresh development, are fully customizable and the markup is minimal so you can use and style them as you please. You don't have to worry about browser issues as they were tested against cross-browser and cross-platform compatibility:</p>
     <ul>
       <li>Chrome</li>
       <li>Safar</li>
@@ -35,7 +33,7 @@
       <!-- AddThis Button BEGIN -->
       <div class="addthis_toolbox addthis_default_style ">
         <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_tweet" tw:text="Start your development with SimpleUI - http://paranoida.github.com/simple-ui/" tw:via="paranoida"></a>
       </div>
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fe8badb0b3cdf55"></script>
       <!-- AddThis Button END -->
@@ -48,207 +46,229 @@
     </div>
   </div>
 
-  <h1>Components</h1>
+  <div class="components">
+    <h1>Components</h1>
 
-  <div class="component">
-    <h3>.bt</h3>
-    <a href="#" class="bt">link</a>
-    <input type="submit" class="bt" value="submit" />
-  </div>
-  <div class="component">
-    <h3>.bt:hover / .bt.active</h3>
-    <a href="#" class="bt active">link</a>
-    <input type="submit" class="bt active" value="submit" />
-  </div>
-  <div class="component">
-    <h3>.bt.disabled</h3>
-    <a href="#" class="bt disabled">link</a>
-    <input type="submit" class="bt disabled" value="submit" />
-  </div>
-
-  <div class="component">
-    <h3>.bt.bt_small</h3>
-    <a href="#" class="bt bt_small">link</a>
-    <input type="submit" class="bt bt_small" value="submit" />
-  </div>
-  <div class="component">
-    <h3>.bt.bt_medium</h3>
-    <a href="#" class="bt bt_medium">link</a>
-    <input type="submit" class="bt bt_medium" value="submit" />
-  </div>
-  <div class="component">
-    <h3>.bt.bt_large</h3>
-    <a href="#" class="bt bt_large">link</a>
-    <input type="submit" class="bt bt_large" value="submit" />
-  </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>.box</h3>
-    <div class="box">
-      <div class="box_head">
-        <h3>title</h3>
-      </div>
-      <div class="box_body">body</div>
+    <div class="component">
+      <h3>.bt</h3>
+      <a href="#" class="bt">link</a>
+      <input type="submit" class="bt" value="submit" />
     </div>
-  </div>
+    <div class="component">
+      <h3>.bt:hover / .bt.active</h3>
+      <a href="#" class="bt active">link</a>
+      <input type="submit" class="bt active" value="submit" />
+    </div>
+    <div class="component">
+      <h3>.bt.disabled</h3>
+      <a href="#" class="bt disabled">link</a>
+      <input type="submit" class="bt disabled" value="submit" />
+    </div>
 
-  <div class="component">
-    <h3>.box (actions in header)</h3>
-    <div class="box">
-      <div class="box_head">
-        <h3>title</h3>
-        <div class="actions">
-          <a href="#" class="bt">Action</a>
-          <a href="#" class="bt">Action</a>
+    <div class="component">
+      <h3>.bt.bt_small</h3>
+      <a href="#" class="bt bt_small">link</a>
+      <input type="submit" class="bt bt_small" value="submit" />
+    </div>
+    <div class="component">
+      <h3>.bt.bt_medium</h3>
+      <a href="#" class="bt bt_medium">link</a>
+      <input type="submit" class="bt bt_medium" value="submit" />
+    </div>
+    <div class="component">
+      <h3>.bt.bt_large</h3>
+      <a href="#" class="bt bt_large">link</a>
+      <input type="submit" class="bt bt_large" value="submit" />
+    </div>
+
+    <hr>
+
+    <div class="component">
+      <h3>.box</h3>
+      <div class="box">
+        <div class="box_head">
+          <h3>title</h3>
+        </div>
+        <div class="box_body">body</div>
+      </div>
+    </div>
+
+    <div class="component">
+      <h3>.box (actions in header)</h3>
+      <div class="box">
+        <div class="box_head">
+          <h3>title</h3>
+          <div class="actions">
+            <a href="#" class="bt">Action</a>
+            <a href="#" class="bt">Action</a>
+          </div>
+        </div>
+        <div class="box_body">body</div>
+      </div>
+    </div>
+
+    <div class="component">
+      <h3>.box (actions in footer)</h3>
+      <div class="box">
+        <div class="box_head">
+          <h3>title</h3>
+        </div>
+        <div class="box_body">body</div>
+        <div class="box_foot">
+          <div class="actions">
+            <a href="#">Cancel</a> or
+            <a href="#" class="bt">Action</a>
+          </div>
         </div>
       </div>
-      <div class="box_body">body</div>
+    </div>
+
+    <hr>
+
+    <div class="component">
+      <h3>.table</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john.doe@company.com</td>
+            <td>Manager</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>jane.doe@company.com</td>
+            <td>Administrator</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Roe</td>
+            <td>jane.roe@company.com</td>
+            <td>Buyer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="component">
+      <h3>.thumb (img)</h3>
+      <img src="images/img.jpg" alt="sample image" class="thumb" />
+    </div>
+
+    <hr>
+
+    <div class="component">
+      <h3>.label</h3>
+      <span class="label">inbox</span>
+    </div>
+
+    <div class="component">
+      <h3>.label.invert</h3>
+      <span class="label invert">inbox</span>
+    </div>
+
+    <div class="component">
+      <h3>.badge</h3>
+      <span class="badge">24</span> messages
+    </div>
+
+    <div class="component">
+      <h3>.badge.invert</h3>
+      <span class="badge invert">24</span> messages
+    </div>
+
+    <hr>
+
+    <div class="component">
+      <h3>input</h3>
+      <input type="text" value="text" />
+    </div>
+
+    <div class="component">
+      <h3>input (disabled)</h3>
+      <input type="text" value="text" disabled="disabled" />
+    </div>
+
+    <div class="component">
+      <h3>select</h3>
+      <select>
+        <option>Select City</option>
+        <option>London</option>
+        <option>New York</option>
+        <option>Tokyo</option>
+      </select>
+    </div>
+
+    <div class="component">
+      <h3>select (disabled)</h3>
+      <select disabled="disabled">
+        <option>Select City</option>
+        <option>London</option>
+        <option>New York</option>
+        <option>Tokyo</option>
+      </select>
+    </div>
+
+    <div class="component">
+      <h3>textarea</h3>
+      <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget enim quis quam interdum feugiat a in quam. Cras non mi non sapien gravida ullamcorper quis et sem.</textarea>
+    </div>
+
+    <div class="component">
+      <h3>textarea (disabled)</h3>
+      <textarea disabled="disabled">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget enim quis quam interdum feugiat a in quam. Cras non mi non sapien gravida ullamcorper quis et sem.</textarea>
+    </div>
+
+    <div class="component">
+      <h3>inputs (inline example)</h3>
+      <input type="text" placeholder="Your name" />
+      <select>
+        <option>Select City</option>
+        <option>London</option>
+        <option>New York</option>
+        <option>Tokyo</option>
+      </select>
+      <a href="#" class="bt">submit</a>
     </div>
   </div>
 
-  <div class="component">
-    <h3>.box (actions in footer)</h3>
-    <div class="box">
-      <div class="box_head">
-        <h3>title</h3>
-      </div>
-      <div class="box_body">body</div>
-      <div class="box_foot">
-        <div class="actions">
-          <a href="#">Cancel</a> or
-          <a href="#" class="bt">Action</a>
-        </div>
-      </div>
+  <div class="footer">
+    <div class="credits">
+      <p><strong>Credits: </strong>Supported by Selleo web &amp; mobile software development house - <a href="http://selleo.com" target="_blank">http://selleo.com</a></p>
     </div>
+
+    <h1>License</h1>
+    <p>The MIT license</p>
+    <p>Copyright © 2013 <a href="http://paranoida.com" target="_blank">Rafal Bromirski</a></p>
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+    <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+    <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
   </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>.table</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>First name</th>
-          <th>Last name</th>
-          <th>Email</th>
-          <th>Role</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john.doe@company.com</td>
-          <td>Manager</td>
-        </tr>
-        <tr>
-          <td>Jane</td>
-          <td>Doe</td>
-          <td>jane.doe@company.com</td>
-          <td>Administrator</td>
-        </tr>
-        <tr>
-          <td>Jane</td>
-          <td>Roe</td>
-          <td>jane.roe@company.com</td>
-          <td>Buyer</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>.thumb (img)</h3>
-    <img src="images/img.jpg" alt="sample image" class="thumb" />
-  </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>.label</h3>
-    <span class="label">inbox</span>
-  </div>
-
-  <div class="component">
-    <h3>.label.invert</h3>
-    <span class="label invert">inbox</span>
-  </div>
-
-  <div class="component">
-    <h3>.badge</h3>
-    <span class="badge">24</span> messages
-  </div>
-
-  <div class="component">
-    <h3>.badge.invert</h3>
-    <span class="badge invert">24</span> messages
-  </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>input</h3>
-    <input type="text" value="text" />
-  </div>
-
-  <div class="component">
-    <h3>input (disabled)</h3>
-    <input type="text" value="text" disabled="disabled" />
-  </div>
-
-  <div class="component">
-    <h3>select</h3>
-    <select>
-      <option>Select City</option>
-      <option>London</option>
-      <option>New York</option>
-      <option>Tokyo</option>
-    </select>
-  </div>
-
-  <div class="component">
-    <h3>select (disabled)</h3>
-    <select disabled="disabled">
-      <option>Select City</option>
-      <option>London</option>
-      <option>New York</option>
-      <option>Tokyo</option>
-    </select>
-  </div>
-
-  <div class="component">
-    <h3>textarea</h3>
-    <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget enim quis quam interdum feugiat a in quam. Cras non mi non sapien gravida ullamcorper quis et sem.</textarea>
-  </div>
-
-  <div class="component">
-    <h3>textarea (disabled)</h3>
-    <textarea disabled="disabled">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget enim quis quam interdum feugiat a in quam. Cras non mi non sapien gravida ullamcorper quis et sem.</textarea>
-  </div>
-
-  <hr>
-
-  <div class="component">
-    <h3>input</h3>
-    <input type="text" placeholder="Your name" />
-    <select>
-      <option>Select City</option>
-      <option>London</option>
-      <option>New York</option>
-      <option>Tokyo</option>
-    </select>
-    <a href="#" class="bt">submit</a>
-  </div>
-
-
 </div>
 
 <!-- bottom script -->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-21199369-7']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+</script>
 <!-- end -->
 
 </body>
